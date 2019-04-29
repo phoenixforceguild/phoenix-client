@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './home.css';
+import Toolbar from './toolbar';
 
 class Home extends Component {
   render() {
     return (
       <div className="tst">
-        Heey
+        <Toolbar className="toolbar" />
       </div>
     );
   }

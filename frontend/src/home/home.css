@@ -1,6 +1,18 @@
 .tst {
   display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 100%;
   width: 100%;
+  height: 100%;
+}
+
+.toolbar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:1;
+  grid-row-end: 2;
+}
+
+.toolbar-details {
+  background-color: black;
 }

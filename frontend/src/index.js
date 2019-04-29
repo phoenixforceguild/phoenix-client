@@ -17,7 +17,7 @@ const store = createStore(
 
 render(    
   <Provider store={store}>
-      <App />
+      <App style={{height: '100%;'}} />
   </Provider>,
   document.getElementById('root')
 );
