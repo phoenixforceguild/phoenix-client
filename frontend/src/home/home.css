@@ -1,9 +1,17 @@
 .tst {
   display: grid;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 8% 92%;
   grid-template-columns: 100%;
   width: 100%;
   height: 100%;
+}
+
+.home-content {
+  grid-row-start:2;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: start;
+  margin-top: 10em;
 }
 
 .toolbar {
@@ -14,5 +22,30 @@
 }
 
 .toolbar-details {
-  background-color: black;
+  background-color:crimson;
+  box-shadow: 5px 3px 3px gray;
+  display: grid;
+  grid-template-columns: 10% auto 15%;
+}
+
+.toolbar-auth-btn {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  align-self: center;
+}
+
+.toolbar-menu {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: center;
+  width: 15em;
+}
+
+.toolbar-title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  font-size: 18px;
 }

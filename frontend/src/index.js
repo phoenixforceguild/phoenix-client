@@ -7,6 +7,7 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
 import { render } from 'react-dom';
+import 'antd/dist/antd.css';
 
 const middleware = [thunk, logger];
 
