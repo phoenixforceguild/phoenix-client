@@ -34,21 +34,23 @@ class Toolbar extends Component {
     );
 
     return (
-      <div className="toolbar-details">
-        <div className="toolbar-menu">
-        <Dropdown overlay={menu}>
-          <Button type="danger">
-            Menu <Icon type="down" />
-          </Button>
-        </Dropdown>
-        </div>
-        <div className="toolbar-title">
-          <b><span>{this.props.title}</span></b>
-        </div>
-        <div className="toolbar-auth-btn">
-          <Button type="danger">
-            Registrar/Entrar
-          </Button>
+      <div className="toolbar">
+        <div className="toolbar-details">
+          <div className="toolbar-menu">
+            <Dropdown overlay={menu}>
+              <Button type="danger" style={{justifySelf: "center"}}>
+                Menu <Icon type="down" />
+              </Button>
+            </Dropdown>
+          </div>
+          <div className="toolbar-title">
+            <b><span>{this.props.title}</span></b>
+          </div>
+          <div className="toolbar-auth-btn">
+            <Button type="danger">
+              Registrar/Entrar
+            </Button>
+          </div>
         </div>
       </div>
     );
