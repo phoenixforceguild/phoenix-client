@@ -13,7 +13,6 @@
 
 .App {
   text-align: center;
-  overflow: scroll;
   grid-row-start: 2;
   grid-row-end: 3;
 }
